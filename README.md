@@ -1,27 +1,17 @@
 # Mowin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+el proyecto esta hecho con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
-## Development server
+## servidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+para correr el servidor de desarrollo usar `ng serve` . nos arrojara un puerto por defecto `http://localhost:4200/`.
 
-## Code scaffolding
+## Paquetes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+los paquetes usados en el proyecto fueron boostrap y boxicons, para poder instalar estos paquetes escribir los siguientes comandos en la consola:
 
-## Build
+ `npm install boxicons --save`,`npm install bootstrap@5.2.0-beta1 `
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ya despues de instalar los paquetes en angular.json agregar las rutas de los paquetes en node-modules y agregarlas en styles y en el caso de boostrap en styles y en script ya que este utiliza funcionalidades javascript.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+tener en cuenta que los archivos a agregar en angular.json tienen que tener antes de su terminacion el min es decir min.js, min.css, etc.
