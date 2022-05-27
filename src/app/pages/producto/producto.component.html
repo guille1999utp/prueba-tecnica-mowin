@@ -1,0 +1,20 @@
+<div class="w-100 mt-2 px-4">
+    <div class="row row-cols-1 row-cols-sm-2 ">
+        <div class="col">
+            <div class="d-flex flex-column mb-3 w-75">
+                <h3 class="p-2 fw-normal">{{heroe.nombre}}</h3>
+                <h4 class="p-2 fs-6 fw-normal">{{heroe.personaje}}</h4>
+                <hr>
+                <img alt="imagen producto" src="{{heroe.routeImagen}}" class="w-50">
+            </div>
+        </div>
+        <div class="col">
+            <h3 class="p-2 fw-normal">{{heroe.compania}}</h3>
+            <hr>
+            <p class="py-2 px-4 fs-6 fw-normal">{{heroe.aparicion}}</p>
+            <p class="py-2 px-4 fs-6 fw-normal">{{heroe.personaje}}</p>
+            <a [routerLink]="['/']" class=" py-2 px-4 text-decoration-none text-orange">Regresar</a>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="w-100 ps-4 ">
+  <h3 class="bg-white fw-normal py-2 px-2 border-b">Lista de heroes</h3>
+</div>
+<!-- cards -->
+<div class="container ">
+  <div class="row gap-4">
+    <div class="col" *ngFor="let heroe of heroes.bd">
+      <app-card [datos]="heroe"></app-card>
+    </div>
+  </div>
+</div>

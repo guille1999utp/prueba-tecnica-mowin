@@ -1,0 +1,15 @@
+    <div class="card mx-auto" style="width: 18rem;">
+      <div class="card-header bg-white ms-2 style-header-card">
+        <h4>{{datos.nombre}}</h4>
+        <span>{{datos.personaje}}</span>
+      </div>
+      <img src="{{datos.routeImagen}}" class="card-img-top aspect-card-large" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title fw-normal">{{datos.compania}}</h5>
+        <div class="card-body-inf mb-4">
+        <p><b>primera aparicion: </b>{{ datos.aparicion }}</p>
+        <p><b>personaje: </b>{{datos.personaje}}</p>
+        </div>
+        <a [routerLink]="['/producto',datos.nombre]" class="text-decoration-none text-orange">Leer mas...</a>
+      </div>
+    </div>
